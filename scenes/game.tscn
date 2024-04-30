@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3i5510matnhm"]
+
+[ext_resource type="PackedScene" uid="uid://d32qs6r6bni0f" path="res://scenes/hero.tscn" id="1_g1dio"]
+[ext_resource type="PackedScene" uid="uid://4x38hi2r1lg3" path="res://scenes/enemy.tscn" id="2_55w7o"]
+[ext_resource type="PackedScene" uid="uid://cqrtk284ee7d3" path="res://scenes/ground.tscn" id="3_4ixxw"]
+[ext_resource type="PackedScene" uid="uid://cfift48p6l48x" path="res://scenes/bg.tscn" id="4_xfvs1"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Hero" parent="." instance=ExtResource("1_g1dio")]
+position = Vector2(-24, -18)
+scale = Vector2(0.983051, 1)
+
+[node name="Enemy" parent="." instance=ExtResource("2_55w7o")]
+position = Vector2(16, -13)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_4ixxw")]
+scale = Vector2(0.12501, 0.120462)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("4_xfvs1")]
+layer = -1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+z_index = 10
+position = Vector2(0, -8)
+scale = Vector2(0.846847, 0.96535)
+zoom = Vector2(16, 16)

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqrtk284ee7d3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_h14c2"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.309804, 0.227451, 0.168627, 1)
+polygon = PackedVector2Array(-192, 0, 192, 0, 192, 128, 0, 336, -192, 128)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.91921, 0.285903)
+shape = SubResource("WorldBoundaryShape2D_h14c2")

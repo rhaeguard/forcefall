@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cfift48p6l48x"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = -128.0
+offset_top = 24.0
+offset_right = 5.0
+offset_bottom = 96.0
+scale = Vector2(1.92339, -1.23912)
+color = Color(0.741176, 1, 1, 1)
+
+[node name="Polygon2D" type="Polygon2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-8, 8)
+scale = Vector2(0.717004, 0.585305)
+color = Color(0, 0.843137, 0.184314, 1)
+polygon = PackedVector2Array(-80, 8, -56, -16, -40, -24, -32, -32, -16, -32, 0, -40, 16, -16, 32, -16, 40, -32, 56, -40, 72, -48, 80, -40, 88, -32, 96, -24, 112, -16, 120, -8, 128, 0, 144, 16, 152, 32, 56, 32, -24, 40, -88, 40, -112, 32)
